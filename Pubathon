@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puabthon</title>
+<style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container, .extras {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .extras {
+            text-align: left;
+        }
+        .extras h2 {
+            margin-bottom: 10px;
+            text-align: center; /* Center the title "Extras" */
+        }
+        .extras label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .extras div {
+            margin-bottom: 10px;
+        }
+        .extras button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .generate-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+<h1>Puabthon</h1>
+<h2>The Pub Crawl Generator</h2>
+ 
+    <div class="container">
+<h2>City</h2>
+<select>
+<option>Select a City</option>
+<!-- Add your city options here -->
+</select>
+ 
+        <h2>Starting Location</h2>
+<select>
+<option>Select Area</option>
+<!-- Add your starting location options here -->
+</select>
+ 
+        <h2>Ending Location</h2>
+<select>
+<option>Select Area</option>
+<!-- Add your ending location options here -->
+</select>
+ 
+        <h2>Number of Pubs</h2>
+<select>
+<!-- You can leave this empty for the user to select -->
+</select>
+</div>
+ 
+    <div class="extras">
+<h2>Extras</h2>
+<div>
+<label for="teamGenerator">Team Generator:</label>
+<button id="teamGeneratorYes">Yes</button>
+<button id="teamGeneratorNo">No</button>
+</div>
+<div>
+<label for="ruleGenerator">Rule Generator:</label>
+<button id="ruleGeneratorYes">Yes</button>
+<button id="ruleGeneratorNo">No</button>
+</div>
+<div>
+<label for="forfeitGenerator">Forfeit Generator:</label>
+<button id="forfeitGeneratorYes">Yes</button>
+<button id="forfeitGeneratorNo">No</button>
+</div>
+<div>
+<label for="fancyDressGenerator">Fancy Dress Generator:</label>
+<button id="fancyDressGeneratorYes">Yes</button>
+<button id="fancyDressGeneratorNo">No</button>
+</div>
+</div>
+ 
+    <button class="generate-button">Generate Pub Crawl</button>
+</body>
+</html>
